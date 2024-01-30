@@ -1,0 +1,222 @@
+:root {
+    --main-blood: #EC8F5E;
+    --main-orange: #F3B664;
+    --main-yellow: #F1EB90;
+    --main-green: #9FBB73;
+    --main-grey: #40514e;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    color: var(--main-grey);
+  }
+
+  .top-section {
+    height: 50vh;
+  }
+
+  .hero {
+    height: 50vh;
+    background-color: var(--main-blood);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-yellow);
+    margin-bottom: 0px;
+  }
+
+  .title {
+    margin: 0;
+    font-family: "Pacifico", sans-serif;
+    font-size: 6rem;
+    z-index: 1;
+  }
+
+  .sub {
+    font-family: sans-serif;
+    font-size: 3rem;
+    z-index: 1;
+    font-style: italic;
+  }
+
+  .cactus {
+    height: 500px;
+  }
+
+  .sun {
+    position: absolute;
+    height: 500px;
+    bottom: 1350px;
+    left: 1500px;
+  }
+
+  .about {
+    height: 50vh;
+    display: flex;
+    gap: 100px;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-title {
+    color: var(--main-blood);
+    font-size: 4rem;
+    font-family: sans-serif;
+  }
+
+  .self-pic {
+    height: 600px;
+    border-radius: 50%;
+  }
+
+  .description {
+    width: 800px;
+  }
+
+  .about-desc {
+    font-size: 2rem;
+  }
+
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .resume-section > h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: var(--main-blood);
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .resume {
+    height: 1200px;
+  }
+
+  .projects-list > h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: var(--main-blood);
+    text-align: center;
+  }
+
+  .projects-list > hr {
+    width: 350px;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1500px;
+    gap: 50px;
+  }
+
+  .mondrian {
+    height: 300px;
+  }
+
+  .tindog {
+    height: 270px;
+    border-radius: 100px;
+  }
+
+  .pricingTable {
+    height: 200px;
+  }
+
+  .project > h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: var(--main-orange)
+  }
+
+  .project > p {
+    font-size: 25px;
+  }
+
+  .last-split {
+    margin: 100px auto;
+    border: dotted var(--main-blood) 6px;
+    border-bottom: none;
+    width: 400px;
+  }
+
+  .contact-section {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .contact-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-title > h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: var(--main-blood);
+    text-align: center;
+  }
+
+  .contact-title > p {
+    margin-top: 0;
+    max-width: 800px;
+    font-size: 30px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    gap: 90px
+  }
+
+  #profile-link {
+    color: white;
+    background-color: var(--main-green);
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px;
+    border-radius: 40px;
+    font-family: sans-serif;
+    margin-top: 50px;
+  }
+
+  #profile-link:hover {
+    background-color: var(--main-blood);
+  }
+
+  .footer-section {
+    height: 10vh;
+    background-color: var(--main-blood);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section > p {
+    color: white;
+    font-size: 20px;
+  }
