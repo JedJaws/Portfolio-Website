@@ -8,7 +8,7 @@
 
   body {
     margin: 0;
-    padding: 0;
+    text-align: center;
   }
 
   p {
@@ -16,18 +16,17 @@
   }
 
   .top-section {
-    height: 50vh;
+    background-color: var(--main-blood);
+    color: var(--main-yellow);
+    margin-bottom: 0px;
+  }
+
+  div {
+    display: block;
   }
 
   .hero {
-    height: 50vh;
-    background-color: var(--main-blood);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--main-yellow);
-    margin-bottom: 0px;
+    display: block;
   }
 
   .title {
@@ -44,19 +43,12 @@
     font-style: italic;
   }
 
-  .cactus {
-    height: 500px;
-  }
-
-  .sun {
-    position: absolute;
-    height: 500px;
-    bottom: 1350px;
-    left: 1500px;
+  .sun, .cactus {
+    height: 400px;
   }
 
   .about {
-    height: 50vh;
+    margin: 20px;
     display: flex;
     gap: 100px;
     flex: 1 1 0;
@@ -87,7 +79,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
   }
 
   .resume-section > h2 {
@@ -149,6 +140,7 @@
 
   .project > p {
     font-size: 25px;
+    text-align: left;
   }
 
   .last-split {
@@ -159,10 +151,10 @@
   }
 
   .contact-section {
-    height: 30vh;
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: 60px;
   }
 
   .contact-title {
@@ -209,14 +201,144 @@
   }
 
   .footer-section {
-    height: 10vh;
     background-color: var(--main-blood);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
 
   .footer-section > p {
     color: white;
     font-size: 20px;
+  }
+  
+  /*Laptops: 1201px — 1600px*/
+  @media (min-width: 375px) and (max-width: 1600px) {
+    .sun, .cactus {
+      height: 300px;
+    }
+
+    .self-pic {
+      height: 375px;
+    }
+
+    .description {
+      width: 600px;
+    }
+
+    .resume {
+      height: 900px;
+    }
+
+    .block {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-width: 900px;
+      gap: 25px;
+    }
+
+    .project > h2 {
+      font-size: 25px;
+    }
+
+    .project > p {
+      font-size: 20px;
+    }
+
+    .mondrian {
+      height: 200px;
+    }
+
+    .tindog {
+      height: 150px;
+      border-radius: 100px;
+    }
+
+    .pricingTable {
+      height: 200px;
+    }
+
+    .contact-title > h2 {
+      font-size: 30px;
+    }
+
+    .contact-title > p {
+      margin-top: 0;
+      max-width: 800px;
+      font-size: 20px;
+    }
+  }
+
+  /*iPhone: 319px — 480px*/
+  @media (min-width: 319px) and (max-width: 480px) {
+    .sun, .cactus {
+      height: 200px;
+    }
+
+    .about {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .self-pic {
+      height: 375px;
+    }
+
+    .description {
+      width: 600px;
+    }
+
+    .resume {
+      height: 900px;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
+      gap: 25px;
+    }
+
+    .project > h2 {
+      font-size: 25px;
+    }
+
+    .project > p {
+      font-size: 20px;
+    }
+
+    .mondrian {
+      height: 300px;
+    }
+
+    .tindog {
+      height: 300px;
+      border-radius: 100px;
+    }
+
+    .pricingTable {
+      height: 400px;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+      gap: 90px
+    }
+
+    .contact-title > h2 {
+      font-size: 30px;
+    }
+
+    .contact-title > p {
+      margin-top: 0;
+      max-width: 800px;
+      font-size: 20px;
+    }
   }
